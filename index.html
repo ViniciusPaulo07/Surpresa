@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Surprise</title>
+</head>
+<body>
+    <header>
+        <h1 id="header-title" class="title">Surpresa</h1>
+    </header>
+    <main>
+        <div id="container-initial">
+            <div id="initial-title" class="paragraphs">
+                <p class="title">Fizemos uma coisa muito especial para você!</p>
+            </div>  
+            
+            <div id="mail">
+                <img src="./image/letterOld2.jpeg" alt="Carta" id="letter">
+                <button id="buttonMail">V&P</button>
+            </div>
+
+            <div id="information">
+                <p class="subtitle">Clique na carta</p>
+            </div>
+        </div>
+
+        <div id="modal-overlay" style="display: none;">
+            <div id="modal-box">
+                <div id="container-payment" style="display: none;">
+                    <div id="checkout-summary">
+                        <div id="checkout-item">
+                            <p class="checkout-label">Resumo</p>
+                            <p class="checkout-product">Acesso à Surpresa Exclusiva</p>
+                        </div>
+
+                        <div id="checkout-price">
+                            <span id="price-value">R$ 99,99</span>
+                        </div>
+
+                        <div id="checkout-method">
+                            <p class="checkout-label">Forma de pagamento</p>
+                            <div id="pix-badge">
+                                <span id="pix-dot"></span> Pix
+                            </div>
+                        </div>
+
+                        <button id="buttonFakePay">Gerar QR Code Pix</button>
+                    </div>
+
+                    <div id="container-pix" style="display: none;">
+                        <div id="pix-item">
+                            <p class="checkout-label">Pagamento</p>
+                            <p class="checkout-product">Escaneie o QR Code para pagar</p>
+                        </div>
+
+                        <div id="QRCode">
+                            <img src="https://quickchart.io/qr?text=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DY6fzhlh375c&size=200" alt="QR Code" id="QRCodeImg">
+                        </div>
+
+                        <div id="pix-timer">
+                            <p class="checkout-label">Expira em</p>
+                            <div id="divTimer"><span id="timer">30</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+
+        <div id="container-final" style="display: none; filter: blur(8px);">
+            <div class="paragraphs">
+                <p class="title">Você desbloqueou sua surpresa!</p>
+            </div>
+
+            <div id="happyBirthday">
+                <p class="title">Feliz Aniversário!</p>
+            </div>
+                
+            <div id="openMail">
+                <span id="mensage">
+                    <strong>Washington</strong>
+                    <br>
+                    Esse presente foi feito com muito carinho e dedicação, para que você tenha um pouco do nosso agradecimento
+                    por ser esse cara incrível que você é, nos ajudando e ensinando mesmo de forma agressiva, as vezes beirando a escravidão
+                    e a insanidade.
+                    <br>
+                    Saiba que nós gostamos muito de você e que quando tivermos condições financeiras te convidaremos para um 
+                    churrasco <strong>(e você tem que ir)</strong>.
+                    <br>
+                    Te desejamos um feliz aniversário, esperamos que a gente não se mate no caminho e que tenhamos
+                    muitas histórias para contar.
+                    <br>
+                    <br>
+                    De: Seus queridos amigos, best friends e (filhos):
+                    <br>
+                    Little Vini e Paolinha.
+                </span>
+            </div>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
